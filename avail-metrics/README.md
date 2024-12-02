@@ -75,7 +75,7 @@ Avail metrics provide essential information for monitoring and evaluating the pe
 
 For a complete description of the available metrics, check out the metrics document below.
 
-[![Metrics](https://img.shields.io/badge/Metrics-View%20Metrics-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail-tools/blob/main/avail_metrics/metrics.md)
+[![Metrics](https://img.shields.io/badge/Metrics-View%20Metrics-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail_tools/blob/main/avail_metrics/metrics.md)
 
 ## Grafana Dashboard
 
@@ -86,7 +86,7 @@ The Grafana dashboard for Avail metrics provides an interactive, real-time visua
 
 You can download the Grafana Ddashboard V3 from the link below:
 
-[![Grafana Dashboard](https://img.shields.io/badge/Grafana%20Dashboard-Download-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail-tools/blob/main/avail_metrics/Avail%20Metrics%20Cumulo%20v3-1732449812844.json)
+[![Grafana Dashboard](https://img.shields.io/badge/Grafana%20Dashboard-Download-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail_tools/blob/main/avail_metrics/Avail%20Metrics%20Cumulo%20v3-1732449812844.json)
 
 ---
 
