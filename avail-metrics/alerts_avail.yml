@@ -1,0 +1,104 @@
+groups:
+  - name: "Avail Node Alerts"
+    rules:
+      # General Node Status
+      - alert: NodeStatusReportOnline
+        expr: up{job="avail_mainnet"} == 1
+        for: 15m
+        labels:
+          severity: info  # Changed severity to info for general status
+          alert_source: avail
+        annotations:
+          summary: "Node Status Report - Online"
+          description: "The Avail node is online. Synchronization status and current block are being monitored."
+          server: "server IP"
+
+      - alert: AvailNodeBlockStatus
+        expr: up{job="avail_mainnet"} == 1
+        for: 15m
+        labels:
+          severity: info  # Changed severity to info for general status
+          alert_source: avail
+        annotations:
+          summary: "Avail Node Block Status"
+          description: |
+            Block heights for Avail node:
+            - *Current Block (Best)*: {{ with query "substrate_block_height{status='best',chain='avail_da_mainnet'}" }}{{ . | first | value }}{{ end }}
+            - *Finalized Block*: {{ with query "substrate_block_height{status='finalized',chain='avail_da_mainnet'}" }}{{ . | first | value }}{{ end }}
+            - *Sync Target*: {{ with query "substrate_block_height{status='sync_target',chain='avail_da_mainnet'}" }}{{ . | first | value }}{{ end }}
+
+      - alert: NodeStatusReportOffline
+        expr: up{job="avail_mainnet"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          alert_source: avail
+        annotations:
+          summary: "Node Status Report - Offline"
+          description: "The Avail node is currently offline or not synchronized."
+
+      # Alert when the node is not syncing
+      - alert: NodeNotSyncing
+        expr: rate(substrate_block_height_best[5m]) == 0
+        for: 5m
+        labels:
+          severity: critical
+          alert_source: avail
+        annotations:
+          summary: "Node Not Syncing"
+          description: "The block height has not changed in the last 5 minutes."
+
+      # Alert if the node loses connection with all peers
+      - alert: NoConnectedPeers
+        expr: substrate_sub_libp2p_peers_count == 0
+        for: 5m
+        labels:
+          severity: warning
+          alert_source: avail
+        annotations:
+          summary: "No Connected Peers"
+          description: "The node has lost connection with all peers."
+
+      # New alert for low peer count
+      - alert: LowPeerCount
+        expr: substrate_sub_libp2p_peers_count < 2
+        for: 5m
+        labels:
+          severity: major
+          alert_source: avail
+        annotations:
+          summary: "Low Number of Connected Peers"
+          description: "The number of connected P2P peers has been below the defined threshold in the last 5 minutes."
+
+      # New alert for stalled block production
+      - alert: BlockProductionStalled
+        expr: increase(substrate_block_height{status="finalized"}[5m]) == 0
+        for: 5m
+        labels:
+          severity: critical
+          alert_source: avail
+        annotations:
+          summary: "Block Production Stalled"
+          description: "The node has not produced any finalized blocks in the last 5 minutes."
+
+      # New alert for inactive node
+      - alert: NodeInstanceUnavailable
+        expr: up{job="avail_mainnet"} == 0
+        for: 1m
+        labels:
+          severity: critical
+          alert_source: avail
+        annotations:
+          summary: "Avail Node Instance Unavailable"
+          description: "The instance has been down for more than 5 minutes."
+
+      # New alert for sync delay
+      - alert: SyncDelayDetected
+        expr: sum by (instance)(substrate_block_height{status="sync_target"}) - sum by (instance)(substrate_block_height{status="finalized"}) > 2
+        for: 5m
+        labels:
+          severity: critical
+          alert_source: avail
+        annotations:
+          summary: "Sync Delay Detected"
+          description: "The node is out of sync by more than 2 blocks for the last 5 minutes."
