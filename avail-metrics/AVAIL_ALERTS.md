@@ -16,7 +16,7 @@ This guide outlines the steps to configure alerts for the Avail node using Prome
 
 Create or update the Prometheus alert rules file at `/etc/prometheus/rules/avail_alerts.yml` with the following content:
 
-[![Avail Alerts](https://img.shields.io/badge/Avail_Alerts-View%20File-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail-tools/blob/main/avail-metrics/alerts_avail.yml)
+[![Avail Alerts](https://img.shields.io/badge/Avail_Alerts-View%20File-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail_tools/blob/main/avail-metrics/alerts_avail.yml)
 
 Download or reference the file and save it to `/etc/prometheus/rules/avail_alerts.yml`. Validate the configuration using:
 ```bash
@@ -27,7 +27,7 @@ promtool check rules /etc/prometheus/rules/avail_alerts.yml
 
 Use the Alertmanager configuration file provided in the following link:
 
-[![Alertmanager Config](https://img.shields.io/badge/Alertmanager_Config-View%20File-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail-tools/blob/main/avail-metrics/alertmanager1.yml)
+[![Alertmanager Config](https://img.shields.io/badge/Alertmanager_Config-View%20File-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cumulo-pro/Avail_tools/blob/main/avail-metrics/alertmanager1.yml)
 
 Save the file to `/etc/alertmanager/alertmanager.yml`.
 
