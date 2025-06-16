@@ -54,4 +54,28 @@
         "Node Installation": "https://utsa.gitbook.io/services/other-projects/avail-testnet/installation"       
     }
  },
+   {
+    "name": "Encapsulate",
+    "webservices": "https://github.com/encapsulate-xyz",
+    "x": "encapsulate_xyz",
+    "validatorlogo": "encapsulate.jpg",
+    "explorer": "",
+    "rpc": "",
+    "snapshot": "",
+     "tools_url": {
+        "Ansible Playbook to deploy Avail Node": "https://github.com/encapsulate-xyz/avail-ansible"
+      }
+ },
+   {
+    "name": "AKNodes",
+    "webservices": "https://services.aknodes.com/other-projetcs/avail-mainnet/sync",
+    "x": "AKNodes",
+    "validatorlogo": "aknodes.jpg",
+    "explorer": "",
+    "rpc": "",
+    "snapshot": "https://services.aknodes.com/other-projetcs/avail-mainnet/sync",
+      "content": {
+        "Node Installation": "https://services.aknodes.com/other-projetcs/avail-mainnet/installation"       
+    }
+ }
 ]
