@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Cumulo",
+    "webservices": "https://cumulo.pro/services/avail/",
+    "x": "Cumulo_pro",
+    "validatorlogo": "cumulo.jpg",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "snapshot": "",
+    "websocket": "",
+    "addrbook": "",
+    "tools": "RPC Scan",
+      "tools_url": {
+      "RPC Scan": ""
+    },
+    "content":{
+      "Node Guide": ""
+     },
+    "peers": ""
+   }
+]
