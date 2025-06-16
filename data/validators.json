@@ -10,13 +10,21 @@
     "snapshot": "",
     "websocket": "",
     "addrbook": "",
-    "tools": "RPC Scan",
-      "tools_url": {
+    "tools_url": {
       "RPC Scan": ""
     },
-    "content":{
-      "Node Guide": ""
-     },
+      "content":{
+        "Node Guide": ""
+       },
     "peers": ""
+   },
+   {
+    "name": "Openbitlab",
+    "webservices": "",
+    "x": "Openbitlab_node",
+    "validatorlogo": "openbitlab.png",
+    "tools_url": {
+        "Avail Validator Bot": "https://x.com/Openbitlab_node/status/1894439876252078429"
+      }
    }
 ]
