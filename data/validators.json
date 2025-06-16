@@ -41,5 +41,17 @@
      "content": {
         "Node Guide": "https://services.ruangnode.com/mainnet/avail/installation"
     }
-   }
+   },
+   {
+    "name": "𝐥𝐞𝐬𝐧𝐢𝐤 | 𝐔𝐓𝐒𝐀",
+    "webservices": "https://utsa.gitbook.io/services/other-projects/avail-testnet",
+    "x": "lesnik13utsa",
+    "validatorlogo": "𝐥𝐞𝐬𝐧𝐢𝐤.jpg",
+    "explorer": "https://explorer.avail.so/?rpc=wss://t-avail.archive.rpc.utsa.tech/staking",
+    "rpc": "https://t-avail.archive.rpc.utsa.tech/",
+    "snapshot": "https://utsa.gitbook.io/services/other-projects/avail-testnet/snapshot",
+    "content": {
+        "Node Installation": "https://utsa.gitbook.io/services/other-projects/avail-testnet/installation"       
+    }
+ },
 ]
