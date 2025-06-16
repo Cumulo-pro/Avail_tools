@@ -20,9 +20,11 @@
    },
    {
     "name": "Openbitlab",
-    "webservices": "",
+    "webservices": "https://openbitlab.com/network/76/Avail",
     "x": "Openbitlab_node",
     "validatorlogo": "openbitlab.png",
+    "rpc": "https://avail-rpc.openbitlab.com/",
+    "snapshot": "https://openbitlab.com/network/76/Avail/snapshot", 
     "tools_url": {
         "Avail Validator Bot": "https://x.com/Openbitlab_node/status/1894439876252078429"
       }
