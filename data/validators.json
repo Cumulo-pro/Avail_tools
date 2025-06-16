@@ -30,5 +30,16 @@
         "Srvcheck helps you to monitor blockchain nodes": "https://github.com/openbitlab/srvcheck",
         "Server heartbeat tool": "https://github.com/openbitlab/srvbeat"
       }
+   },
+   {
+    "name": "ruangnode",
+    "webservices": "https://services.ruangnode.com/mainnet/avail",
+    "x": "ruangnode",
+    "validatorlogo": "ruangnode.png",
+    "rpc": "",
+    "snapshot": "https://services.ruangnode.com/mainnet/avail/snapshot",
+     "content": {
+        "Node Guide": "https://services.ruangnode.com/mainnet/avail/installation"
+    }
    }
 ]
