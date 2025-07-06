@@ -27,7 +27,7 @@
     "name": "ruangnode",
     "webservices": "https://services.ruangnode.com/mainnet/avail",
     "x": "ruangnode",
-    "validatorlogo": "ruangnode.png",
+    "validatorlogo": "ruangnode.jpg",
     "rpc": "",
     "snapshot": "https://services.ruangnode.com/mainnet/avail/snapshot",
      "content": {
