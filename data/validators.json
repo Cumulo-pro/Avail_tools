@@ -1,15 +1,19 @@
 [
-  {
-    "name": "Cumulo",
-    "webservices": "https://cumulo.pro/services/avail/",
-    "x": "Cumulo_pro",
-    "validatorlogo": "cumulo.jpg",
-    "api": "",
-    "rpc": "",
-    "grpc": "",
-    "snapshot": "",
-    "websocket": ""
-   },
+ 
+   {
+    "name": "kjnodes",
+    "webservices": "https://services.kjnodes.com/mainnet/avail/",
+    "x": "kjnodes",
+    "validatorlogo": "kjnodes.jpg",
+    "explorer": "https://explorer.avail.so/?rpc=wss://avail.rpc.kjnodes.com#/staking",
+    "rpc": "https://avail.rpc.kjnodes.com",
+     "wss": "wss://avail.rpc.kjnodes.com",
+     "snapshot": "",
+    "tools_url": {
+        "Avail Node Manager: Easily set up & manage node services": "https://github.com/kjnodes/avail-node-configuration",
+        "Avail Monitoring Solution: Keep an eye on your node's health": "https://github.com/kjnodes/avail-node-monitoring"
+    }
+},
    {
     "name": "Openbitlab",
     "webservices": "https://openbitlab.com/network/76/Avail",
@@ -69,5 +73,16 @@
       "content": {
         "Node Installation": "https://services.aknodes.com/other-projetcs/avail-mainnet/installation"       
     }
- }
+ },
+   {
+    "name": "Cumulo",
+    "webservices": "https://cumulo.pro/services/avail/",
+    "x": "Cumulo_pro",
+    "validatorlogo": "cumulo.jpg",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "snapshot": "",
+    "websocket": ""
+   }
 ]
