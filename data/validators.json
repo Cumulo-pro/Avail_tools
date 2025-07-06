@@ -8,15 +8,7 @@
     "rpc": "",
     "grpc": "",
     "snapshot": "",
-    "websocket": "",
-    "addrbook": "",
-    "tools_url": {
-      "RPC Scan": ""
-    },
-      "content":{
-        "Node Guide": ""
-       },
-    "peers": ""
+    "websocket": ""
    },
    {
     "name": "Openbitlab",
