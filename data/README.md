@@ -30,8 +30,25 @@ To propose changes or add your validator’s resources:
 ## 📄 JSON Structure Example
 
 ```json
-{
-  "name": "Cumulo Pro",
-  "moniker": "Cumulo",
-  
-}
+ {
+    "name": "AKNodes",
+    "webservices": "https://services.aknodes.com/other-projetcs/avail-mainnet/sync",
+    "x": "AKNodes",
+    "validatorlogo": "aknodes.jpg",
+    "explorer": "",
+    "rpc": "",
+    "snapshot": "https://services.aknodes.com/other-projetcs/avail-mainnet/sync",
+      "content": {
+        "Node Installation": "https://services.aknodes.com/other-projetcs/avail-mainnet/installation"       
+    }
+ },
+   {
+    "name": "Cumulo",
+    "webservices": "https://cumulo.pro/services/avail/",
+    "x": "Cumulo_pro",
+    "validatorlogo": "cumulo.jpg",
+    "explorer": "https://avail.subscan.io/?rpc=wss://avail.rpc.cumulo.me",
+    "rpc": "avail.rpc.cumulo.me",
+    "dashboard": "https://explorer.avail.so/?rpc=wss://avail.rpc.cumulo.me"
+   }
+```
