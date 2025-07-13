@@ -1,6 +1,6 @@
 # 🧩 Avail Validator Resources
 
-A curated index of validator resources for the Celestia ecosystem, designed to improve discoverability, accessibility, and collaboration across mainnet and testnet participants.
+A curated index of validator resources for the Avail  ecosystem, designed to improve discoverability, accessibility, and collaboration across mainnet and testnet participants.
 
 ## 🌐 Overview
 
