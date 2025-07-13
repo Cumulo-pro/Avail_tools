@@ -79,10 +79,8 @@
     "webservices": "https://cumulo.pro/services/avail/",
     "x": "Cumulo_pro",
     "validatorlogo": "cumulo.jpg",
-    "api": "",
-    "rpc": "",
-    "grpc": "",
-    "snapshot": "",
-    "websocket": ""
+    "explorer": "https://avail.subscan.io/?rpc=wss://avail.rpc.cumulo.me",
+    "rpc": "avail.rpc.cumulo.me",
+    "dashboard": "https://explorer.avail.so/?rpc=wss://avail.rpc.cumulo.me"
    }
 ]
