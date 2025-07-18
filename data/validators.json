@@ -74,6 +74,24 @@
         "Node Installation": "https://services.aknodes.com/other-projetcs/avail-mainnet/installation"       
     }
  },
+ {
+    "name": "NODERS",
+    "webservices": "https://availhub.org/resources/",
+    "x": "NODERS_TEAM",
+    "validatorlogo": "noders.jpg",
+    "explorer": "",
+    "peers": "",
+    "seeds": "",
+    "api": "",
+    "rpc": "",
+    "grpc": "",
+    "snapshot": "https://availhub.org/resources/snapshot",
+    "addrbook": "",
+    "tools_url": {
+        "Avail Hub": "https://availhub.org/",
+        "RPC List": "https://availhub.org/resources/rpc-list"
+    }       
+  },
    {
     "name": "Cumulo",
     "webservices": "https://cumulo.pro/services/avail/",
