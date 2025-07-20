@@ -92,6 +92,19 @@
         "RPC List": "https://availhub.org/resources/rpc-list"
     }       
   },
+  {
+    "name": "STAVR",
+    "webservices": "https://celestia-tools.stavr.tech/",
+    "x": "",
+    "validatorlogo": "stavr.jpg",
+    "explorer": "https://explorer.avail.so/?rpc=wss://avail.rpc.m.stavr.tech#/accounts",
+    "rpc": "https://avail.rpc.m.stavr.tech",
+    "grpc": "",
+    "snapshot": "https://stavr-team.gitbook.io/nodes-guides/mainnets/avail/statesync-snapshot",
+    "content": {
+        "Node Installation": "https://stavr-team.gitbook.io/nodes-guides/mainnets/avail/node-installation"       
+    }
+},
    {
     "name": "Cumulo",
     "webservices": "https://cumulo.pro/services/avail/",
